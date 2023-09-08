@@ -41,22 +41,15 @@ const config = {
                     "less-loader",
                 ],
             },
-            // {
-            //     test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
-            //     type: 'asset',
-            // },
+            {
+                test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
+                type: 'asset',
+            },
             {
 				test: /\.hbs/,
 				loader: 'handlebars-loader',
 				exclude: /(node_modules)/,
 			},
-            {
-                test: /\.svg$/,
-                loader: 'svg-sprite-loader',
-                options: {
-                    extract: true,
-                }
-            }
 
             // Add your rules for custom modules here
             // Learn more about loaders from https://webpack.js.org/loaders/
@@ -70,8 +63,6 @@ const config = {
 module.exports = () => {
     if (isProduction) {
         config.mode = 'production';
-        
-        
     } else {
         config.mode = 'development';
     }

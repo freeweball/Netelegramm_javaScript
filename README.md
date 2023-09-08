@@ -1,8 +1,5 @@
-### Домен Netlify
-https://superb-mandazi-ac57ed.netlify.app/
-
-### Ссылка на макет в Figma
-https://www.figma.com/file/jF5fFFzgGOxQeB4CmKWTiE/Chat_external_link?node-id=0%3A1
+### Education project
+v1.0.0
 
 ### Версия node
 v16.0.0
@@ -24,6 +21,3 @@ npm run server
 
 ### Запуск тестов
 npm test
-
-### Ссылка на Heroku
-https://messenger-app-education.herokuapp.com/
